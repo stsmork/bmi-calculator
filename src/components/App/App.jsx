@@ -7,6 +7,8 @@ import Info from '../Info/Info';
 import Bar from '../Bar/Bar';
 import { getData, storeData } from '../../helpers/localStorage';
 
+import strings from '../../locales/en.json'; // Import the localized strings
+
 const App = () => {
   const initialState = () => getData('data') || [];
   const [state, setState] = useState(initialState);
@@ -45,7 +47,7 @@ const App = () => {
   return (
     <div className='container'>
       <div className='row center'>
-        <h1 className='white-text'> BMI Tracker </h1>
+        <h1 className='white-text'> {strings.bmiTracker} </h1>
       </div>
       <div className='row'>
         <div className='col m12 s12'>
@@ -53,7 +55,7 @@ const App = () => {
           <Bar labelData={data.date} bmiData={data.bmi} />
           <div>
             <div className='row center'>
-              <h4 className='white-text'>7 Day Data</h4>
+              <h4 className='white-text'>{strings.sevenDayData}</h4>
             </div>
             <div className='data-container row'>
               {state.length > 0 ? (
@@ -71,14 +73,14 @@ const App = () => {
                   ))}
                 </>
               ) : (
-                  <div className='center white-text'>No log found</div>
+                  <div className='center white-text'>{strings.noLogFound}</div>
                 )}
             </div>
           </div>
           {getData('lastState') !== null ? (
             <div className='center'>
               <button className='calculate-btn' onClick={handleUndo}>
-                Undo
+                {strings.undo}
               </button>
             </div>
           ) : (

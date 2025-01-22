@@ -12,11 +12,16 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 
 ## Install
 
-`npm install`
+`npm install --frozen-lockfile`
 
 ## Usage
 
-`npm start`
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+npm start
+```
+
+More info: https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
 
 ## Enhancement
 

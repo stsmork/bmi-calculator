@@ -1,0 +1,14 @@
+{
+  "bmiTracker": "BMI Tracker",
+  "sevenDayData": "7 Day Data",
+  "noLogFound": "No log found",
+  "undo": "Undo",
+  "calculateBmi": "Calculate BMI",
+  "weightLabel": "Weight (in kg)",
+  "heightLabel": "Height (in cm)",
+  "bmiLabel": "BMI",
+  "weight": "Weight",
+  "height": "Height",
+  "date": "Date",
+  "delete": "X"
+}
