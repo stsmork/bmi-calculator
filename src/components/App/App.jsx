@@ -7,7 +7,7 @@ import Info from '../Info/Info';
 import Bar from '../Bar/Bar';
 import { getData, storeData } from '../../helpers/localStorage';
 
-import strings from '../../locales/en.json'; // Import the localized strings
+import strings from '../../locales/pseudo.json'; // Import the localized strings
 
 const App = () => {
   const initialState = () => getData('data') || [];

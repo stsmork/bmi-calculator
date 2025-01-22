@@ -12,16 +12,19 @@ Created with _create-react-app_. See the [full create-react-app guide](https://g
 
 ## Install
 
+1. Download and install the latest version of [Node.js](https://nodejs.org/en/download)
+
+2. Run the following command to install frozen dependencies
+
 `npm install --frozen-lockfile`
 
 ## Usage
 
-```
-set NODE_OPTIONS=--openssl-legacy-provider
-npm start
-```
+1. Use the legacy SSL provider to avoid a crash during startup [more info](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported):
 
-More info: https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+`set NODE_OPTIONS=--openssl-legacy-provider`
+
+`npm start`
 
 ## Enhancement
 

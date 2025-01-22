@@ -2,7 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 
-import strings from '../../locales/en.json'; // Import the localized strings
+import strings from '../../locales/pseudo.json'; // Import the localized strings
 
 const Bar = ({ labelData, bmiData }) => {
   const data = canvas => {

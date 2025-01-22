@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../App/App.css';
-import strings from '../../locales/en.json'; // Import the localized strings
+import strings from '../../locales/pseudo.json'; // Import the localized strings
 
 const initialValues = {
   weight: '',

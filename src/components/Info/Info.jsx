@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import strings from '../../locales/en.json'; // Import the localized strings
+import strings from '../../locales/pseudo.json'; // Import the localized strings
 
 const Info = ({ weight, height, id, date, bmi, deleteCard }) => {
   const handleDelete = () => {
